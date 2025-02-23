@@ -5,13 +5,28 @@ import { Button } from "@/components/ui/button";
 import { producersData } from "@/lib/data";
 import { Link } from "react-router-dom";
 import { Search } from 'lucide-react';
+import { useToast } from "@/components/ui/use-toast";
 
 const Index = () => {
+  const { toast } = useToast();
   const categories = Array.from(new Set(producersData.map((p) => p.categoryName)));
+  const [categoryClicks, setCategoryClicks] = useState<Record<string, number>>({});
+  
   const categoryImages = producersData.reduce((acc, producer) => {
     acc[producer.categoryName] = producer.categoryImage;
     return acc;
   }, {});
+
+  const handleCategoryClick = (category: string) => {
+    setCategoryClicks(prev => ({
+      ...prev,
+      [category]: (prev[category] || 0) + 1
+    }));
+    toast({
+      title: `${category}`,
+      description: `Количество переходов: ${(categoryClicks[category] || 0) + 1}`,
+    });
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
@@ -38,6 +53,7 @@ const Index = () => {
               to={`/producers/${encodeURIComponent(category)}`} 
               key={category}
               className="transform transition-all duration-300 hover:scale-105"
+              onClick={() => handleCategoryClick(category)}
             >
               <Card className="p-6 h-full bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300">
                 <div className="space-y-4">
@@ -47,6 +63,9 @@ const Index = () => {
                   <h3 className="text-xl font-semibold text-gray-900">{category}</h3>
                   <p className="text-gray-600">
                     {producersData.filter(p => p.categoryName === category).length} заведений
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    Переходов: {categoryClicks[category] || 0}
                   </p>
                 </div>
               </Card>

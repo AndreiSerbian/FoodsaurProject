@@ -1,6 +1,7 @@
 export const producersData = [
   {
     categoryName: "Молдавская",
+    categoryImage: "moldovian.jpg",
     producerName: "Bucătăria Moldovenească",
     address: "ул. Штефан чел Маре 45, Кишинёв",
     products: [
@@ -20,6 +21,7 @@ export const producersData = [
   },
   {
     categoryName: "Молдавская",
+    categoryImage: "moldovian.jpg",
     producerName: "Casa Mare",
     address: "ул. Пушкина 12, Бельцы",
     products: [
@@ -39,6 +41,7 @@ export const producersData = [
   },
   {
     categoryName: "Европейская",
+    categoryImage: "european.jpg",
     producerName: "La Cucina Italiana",
     address: "ул. Роз 23, Кишинёв",
     products: [
@@ -58,6 +61,7 @@ export const producersData = [
   },
   {
     categoryName: "Европейская",
+    categoryImage: "european.jpg",
     producerName: "Bistro Français",
     address: "ул. Эминеску 9, Кагул",
     products: [
@@ -77,6 +81,7 @@ export const producersData = [
   },
   {
     categoryName: "Паназиатская",
+    categoryImage: "panasian.jpg",
     producerName: "Sushi Time",
     address: "ул. Вероники 17, Кишинёв",
     products: [
@@ -96,6 +101,7 @@ export const producersData = [
   },
   {
     categoryName: "Паназиатская",
+    categoryImage: "panasian.jpg",
     producerName: "Wok House",
     address: "ул. Каля Басарабяска 3, Бельцы",
     products: [
@@ -115,6 +121,7 @@ export const producersData = [
   },
   {
     categoryName: "Десерты и Напитки",
+    categoryImage: "drinks.jpg",
     producerName: "Sweet Corner",
     address: "ул. Дачия 50, Кишинёв",
     products: [
@@ -134,6 +141,7 @@ export const producersData = [
   },
   {
     categoryName: "Десерты и Напитки",
+    categoryImage: "drinks.jpg",
     producerName: "Fresh Drinks",
     address: "ул. Александри 21, Кагул",
     products: [

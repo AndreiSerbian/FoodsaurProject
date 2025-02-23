@@ -12,8 +12,8 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4 text-gray-900">Выберите категорию</h1>
-          <p className="text-lg text-gray-600">Откройте для себя разнообразие кухонь</p>
+          <h1 className="text-4xl font-bold mb-4 text-gray-900">Foodsaur</h1>
+          <p className="text-lg text-gray-600">Вкусно.Выгодно.Экологично.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

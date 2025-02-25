@@ -13,10 +13,6 @@ const Index = () => {
     return acc;
   }, {});
 
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    e.currentTarget.src = "/placeholder.svg";
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 py-16">
@@ -46,12 +42,7 @@ const Index = () => {
               <Card className="p-6 h-full bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300">
                 <div className="space-y-4">
                   <div className="h-48 rounded-lg bg-gray-100 flex items-center justify-center">
-                    <img 
-                      src={categoryImages[category]} 
-                      alt={category} 
-                      className="h-full w-full object-cover rounded-lg"
-                      onError={handleImageError}
-                    />
+                    <img src={categoryImages[category]} alt={category} className="h-full w-full object-cover rounded-lg" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">{category}</h3>
                   <p className="text-gray-600">

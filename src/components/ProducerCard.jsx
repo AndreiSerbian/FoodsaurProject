@@ -1,29 +1,41 @@
+
 import React, { useState } from 'react';
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
+
 const ProducerCard = ({
   producer
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = producer.products.map(product => product.image);
+
   const goToNextImage = e => {
     e.preventDefault();
     e.stopPropagation();
     setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
   };
+
   const goToPrevImage = e => {
     e.preventDefault();
     e.stopPropagation();
     setCurrentImageIndex(prevIndex => (prevIndex - 1 + images.length) % images.length);
   };
+
+  const handleImageError = (e) => {
+    e.currentTarget.src = '/placeholder.svg';
+  };
+
   return <Link to={`/products/${encodeURIComponent(producer.producerName)}`} className="transform transition-all duration-300 hover:scale-105">
       <Card className="p-6 h-full bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300">
         <div className="space-y-4">
           <div className="h-48 rounded-lg bg-gray-100 flex items-center justify-center relative overflow-hidden">
-            {images.length > 0 && <img src={images[currentImageIndex]} alt={`${producer.producerName} product`} className="h-full w-full object-cover rounded-lg" onError={e => {
-            e.currentTarget.src = '/placeholder.svg';
-          }} />}
+            {images.length > 0 && <img 
+              src={images[currentImageIndex]} 
+              alt={`${producer.producerName} product`} 
+              className="h-full w-full object-cover rounded-lg" 
+              onError={handleImageError} 
+            />}
             {images.length > 1 && <>
                 <button onClick={goToPrevImage} className="absolute left-2 top-1/2 transform -translate-y-1/2 rounded-full p-1 bg-zinc-500 hover:bg-zinc-400">
                   <ChevronLeft className="h-5 w-5 text-gray-800" />
@@ -46,4 +58,5 @@ const ProducerCard = ({
       </Card>
     </Link>;
 };
+
 export default ProducerCard;

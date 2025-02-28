@@ -2,7 +2,7 @@
 export const producersData = [
   {
     categoryName: "Молдавская",
-    categoryImage: "/src/Img/moldovian.jpg",
+    categoryImage: "/lovable-uploads/7c3e90f4-67d1-486c-9127-d445b9d67277.png",
     producerName: "Bucătăria Moldovenească",
     address: "ул. Штефан чел Маре 45, Кишинёв",
     products: [
@@ -22,7 +22,7 @@ export const producersData = [
   },
   {
     categoryName: "Молдавская",
-    categoryImage: "/src/Img/moldovian.jpg",
+    categoryImage: "/lovable-uploads/7c3e90f4-67d1-486c-9127-d445b9d67277.png",
     producerName: "Casa Mare",
     address: "ул. Пушкина 12, Бельцы",
     products: [
@@ -121,8 +121,8 @@ export const producersData = [
     ]
   },
   {
-    categoryName: "Десерты и Напитки",
-    categoryImage: "/src/Img/drinks.jpg",
+    categoryName: "Десерты",
+    categoryImage: "/lovable-uploads/a4606b35-dfd5-4c80-97a2-a09aeb73ba21.png",
     producerName: "Sweet Corner",
     address: "ул. Дачия 50, Кишинёв",
     products: [
@@ -141,7 +141,27 @@ export const producersData = [
     ]
   },
   {
-    categoryName: "Десерты и Напитки",
+    categoryName: "Десерты",
+    categoryImage: "/lovable-uploads/a4606b35-dfd5-4c80-97a2-a09aeb73ba21.png",
+    producerName: "Coffee Point",
+    address: "ул. Когэлничану 32, Кишинёв",
+    products: [
+      {
+        productName: "Круассан",
+        image: "/src/Img/croissant.jpg",
+        priceRegular: 40,
+        priceDiscount: 25
+      },
+      {
+        productName: "Капучино",
+        image: "/src/Img/cappuccino.jpg",
+        priceRegular: 45,
+        priceDiscount: 20
+      }
+    ]
+  },
+  {
+    categoryName: "Напитки",
     categoryImage: "/src/Img/drinks.jpg",
     producerName: "Fresh Drinks",
     address: "ул. Александри 21, Кагул",
@@ -157,6 +177,26 @@ export const producersData = [
         image: "/src/Img/latte.jpg",
         priceRegular: 50,
         priceDiscount: 45
+      }
+    ]
+  },
+  {
+    categoryName: "Напитки",
+    categoryImage: "/src/Img/drinks.jpg",
+    producerName: "Wine Café",
+    address: "ул. Киевская 16, Кишинёв",
+    products: [
+      {
+        productName: "Совиньон Блан (Новая Зеландия)",
+        image: "/src/Img/sauvignon_blanc.jpg",
+        priceRegular: 120,
+        priceDiscount: 110
+      },
+      {
+        productName: "Арманьяк (Франция)",
+        image: "/src/Img/armagnac.jpg",
+        priceRegular: 250,
+        priceDiscount: 230
       }
     ]
   }

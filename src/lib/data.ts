@@ -50,7 +50,7 @@ export const producersData = [
   },
   {
     categoryName: "Европейская",
-    categoryImage: "/placeholder.svg",
+    categoryImage: "/src/Img/european.jpg",
     producerName: "La Cucina Italiana",
     address: "ул. Роз 23, Кишинёв",
     producerImage: {
@@ -74,7 +74,7 @@ export const producersData = [
   },
   {
     categoryName: "Европейская",
-    categoryImage: "/placeholder.svg",
+    categoryImage: "/src/Img/european.jpg",
     producerName: "Bistro Français",
     address: "ул. Эминеску 9, Кагул",
     producerImage: {
@@ -98,7 +98,7 @@ export const producersData = [
   },
   {
     categoryName: "Паназиатская",
-    categoryImage: "/placeholder.svg",
+    categoryImage: "/src/Img/panasian.jpg",
     producerName: "Sushi Time",
     address: "ул. Вероники 17, Кишинёв",
     producerImage: {
@@ -122,7 +122,7 @@ export const producersData = [
   },
   {
     categoryName: "Паназиатская",
-    categoryImage: "/placeholder.svg",
+    categoryImage: "/src/Img/panasian.jpg",
     producerName: "Wok House",
     address: "ул. Каля Басарабяска 3, Бельцы",
     producerImage: {
@@ -194,7 +194,7 @@ export const producersData = [
   },
   {
     categoryName: "Напитки",
-    categoryImage: "/placeholder.svg",
+    categoryImage: "/src/Img/drinks.jpg",
     producerName: "Fresh Drinks",
     address: "ул. Александри 21, Кагул",
     producerImage: {
@@ -218,7 +218,7 @@ export const producersData = [
   },
   {
     categoryName: "Напитки",
-    categoryImage: "/placeholder.svg",
+    categoryImage: "/src/Img/drinks.jpg",
     producerName: "Wine Café",
     address: "ул. Киевская 16, Кишинёв",
     producerImage: {

@@ -1,96 +1,65 @@
 
-import React from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { useCartStore } from "@/store/CartStore";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { X, ShoppingBag, Trash2 } from "lucide-react";
-import { toast } from "sonner";
+import { useCartStore } from "@/store/CartStore";
+import { X } from "lucide-react";
 
 export const CartModal = ({ isOpen, onClose }) => {
-  const { items, removeItem, clearCart } = useCartStore((state) => ({
-    items: state.items,
-    removeItem: state.removeItem,
-    clearCart: state.clearCart
-  }));
+  const { items, removeItem, clearCart } = useCartStore();
 
-  const total = items.reduce(
-    (sum, item) => sum + item.priceDiscount * item.quantity,
-    0
-  );
+  const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const handleCheckout = () => {
-    toast.success("Заказ оформлен успешно!");
+    alert("Заказ оформлен!");
     clearCart();
     onClose();
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle className="flex items-center text-xl">
-            <ShoppingBag className="mr-2 h-5 w-5" />
-            Корзина
-          </DialogTitle>
-        </DialogHeader>
-        
+      <DialogContent className="sm:max-w-[425px] bg-white/90 backdrop-blur-lg">
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-2xl font-semibold">Корзина</h2>
+          <Button variant="ghost" size="icon" onClick={onClose}>
+            <X className="h-4 w-4" />
+          </Button>
+        </div>
+
         {items.length === 0 ? (
-          <div className="py-6 text-center text-gray-500">
-            Ваша корзина пуста
-          </div>
+          <p className="text-center text-gray-600">Корзина пуста</p>
         ) : (
           <>
-            <div className="max-h-[60vh] overflow-y-auto">
+            <div className="space-y-4 mb-6">
               {items.map((item) => (
-                <div 
-                  key={item.productName} 
-                  className="flex items-center justify-between py-4 border-b"
-                >
-                  <div className="flex-1">
-                    <h4 className="font-medium">{item.productName}</h4>
-                    <div className="flex items-center mt-1">
-                      <span className="text-green-600 font-medium">
-                        {item.priceDiscount} MDL
-                      </span>
-                      <span className="mx-2">×</span>
-                      <span>{item.quantity}</span>
-                      <span className="ml-4 text-gray-500">
-                        {item.priceDiscount * item.quantity} MDL
-                      </span>
-                    </div>
+                <div key={item.productName} className="flex justify-between items-center">
+                  <div>
+                    <p className="font-medium">{item.productName}</p>
+                    <p className="text-sm text-gray-600">
+                      {item.price} MDL × {item.quantity}
+                    </p>
                   </div>
-                  <button
+                  <Button
+                    variant="ghost"
+                    size="sm"
                     onClick={() => removeItem(item.productName)}
-                    className="ml-4 p-1 text-gray-400 hover:text-red-500 transition-colors"
                   >
-                    <X className="h-5 w-5" />
-                  </button>
+                    Удалить
+                  </Button>
                 </div>
               ))}
             </div>
-            
-            <div className="pt-4 border-t">
-              <div className="flex justify-between font-semibold text-lg mb-4">
-                <span>Итого:</span>
-                <span>{total} MDL</span>
+
+            <div className="border-t pt-4">
+              <div className="flex justify-between mb-4">
+                <span className="font-semibold">Итого:</span>
+                <span className="font-semibold">{total} MDL</span>
               </div>
-              
-              <div className="flex gap-2">
-                <Button
-                  variant="outline"
-                  onClick={() => clearCart()}
-                  className="flex-1"
-                >
-                  <Trash2 className="mr-2 h-4 w-4" />
-                  Очистить
-                </Button>
-                <Button 
-                  onClick={handleCheckout}
-                  className="flex-1 bg-green-600 hover:bg-green-700"
-                >
-                  Оформить заказ
-                </Button>
-              </div>
+              <Button
+                className="w-full bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white"
+                onClick={handleCheckout}
+              >
+                Оформить заказ
+              </Button>
             </div>
           </>
         )}
@@ -98,5 +67,3 @@ export const CartModal = ({ isOpen, onClose }) => {
     </Dialog>
   );
 };
-
-export default CartModal;

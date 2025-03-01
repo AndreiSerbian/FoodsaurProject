@@ -3,44 +3,23 @@ import { create } from 'zustand';
 
 export const useCartStore = create((set) => ({
   items: [],
-  
-  addItem: (product, quantity = 1) => {
+  addItem: (item) =>
     set((state) => {
-      const existingItem = state.items.find(
-        (item) => item.productName === product.productName
-      );
-
+      const existingItem = state.items.find((i) => i.productName === item.productName);
       if (existingItem) {
         return {
-          items: state.items.map((item) =>
-            item.productName === product.productName
-              ? { ...item, quantity: item.quantity + quantity }
-              : item
+          items: state.items.map((i) =>
+            i.productName === item.productName
+              ? { ...i, quantity: i.quantity + 1 }
+              : i
           ),
         };
-      } else {
-        return {
-          items: [...state.items, { ...product, quantity }],
-        };
       }
-    });
-  },
-
-  removeItem: (productName) => {
+      return { items: [...state.items, { ...item, quantity: 1 }] };
+    }),
+  removeItem: (productName) =>
     set((state) => ({
       items: state.items.filter((item) => item.productName !== productName),
-    }));
-  },
-
-  updateQuantity: (productName, quantity) => {
-    set((state) => ({
-      items: state.items.map((item) =>
-        item.productName === productName ? { ...item, quantity } : item
-      ),
-    }));
-  },
-
-  clearCart: () => {
-    set({ items: [] });
-  },
+    })),
+  clearCart: () => set({ items: [] }),
 }));

@@ -1,5 +1,4 @@
 
-
 export const producersData = [
   {
     categoryName: "Молдавская",
@@ -9,13 +8,13 @@ export const producersData = [
     products: [
       {
         productName: "Плацинда с брынзой",
-        image: "/src/Img/placinta_brynza.jpg",
+        image: "/placeholder.svg",
         priceRegular: 50,
         priceDiscount: 40
       },
       {
         productName: "Мамалыга с брынзой",
-        image: "/src/Img/mamaliga.jpg",
+        image: "/placeholder.svg",
         priceRegular: 60,
         priceDiscount: 55
       }
@@ -29,13 +28,13 @@ export const producersData = [
     products: [
       {
         productName: "Сарма",
-        image: "/src/Img/sarma.jpg",
+        image: "/placeholder.svg",
         priceRegular: 70,
         priceDiscount: 65
       },
       {
         productName: "Зама",
-        image: "/src/Img/zama.jpg",
+        image: "/placeholder.svg",
         priceRegular: 55,
         priceDiscount: 50
       }
@@ -43,19 +42,19 @@ export const producersData = [
   },
   {
     categoryName: "Европейская",
-    categoryImage: "/src/Img/european.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "La Cucina Italiana",
     address: "ул. Роз 23, Кишинёв",
     products: [
       {
         productName: "Пицца Маргарита",
-        image: "/src/Img/pizza_margherita.jpg",
+        image: "/placeholder.svg",
         priceRegular: 120,
         priceDiscount: 100
       },
       {
         productName: "Паста Карбонара",
-        image: "/src/Img/carbonara.jpg",
+        image: "/placeholder.svg",
         priceRegular: 110,
         priceDiscount: 90
       }
@@ -63,19 +62,19 @@ export const producersData = [
   },
   {
     categoryName: "Европейская",
-    categoryImage: "/src/Img/european.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "Bistro Français",
     address: "ул. Эминеску 9, Кагул",
     products: [
       {
         productName: "Киш Лорен",
-        image: "/src/Img/quiche_lorraine.jpg",
+        image: "/placeholder.svg",
         priceRegular: 95,
         priceDiscount: 85
       },
       {
         productName: "Круассан",
-        image: "/src/Img/croissant.jpg",
+        image: "/placeholder.svg",
         priceRegular: 40,
         priceDiscount: 35
       }
@@ -83,19 +82,19 @@ export const producersData = [
   },
   {
     categoryName: "Паназиатская",
-    categoryImage: "/src/Img/panasian.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "Sushi Time",
     address: "ул. Вероники 17, Кишинёв",
     products: [
       {
         productName: "Филадельфия ролл",
-        image: "/src/Img/philadelphia_roll.jpg",
+        image: "/placeholder.svg",
         priceRegular: 150,
         priceDiscount: 130
       },
       {
         productName: "Сяке маки",
-        image: "/src/Img/sake_maki.jpg",
+        image: "/placeholder.svg",
         priceRegular: 90,
         priceDiscount: 75
       }
@@ -103,19 +102,19 @@ export const producersData = [
   },
   {
     categoryName: "Паназиатская",
-    categoryImage: "/src/Img/panasian.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "Wok House",
     address: "ул. Каля Басарабяска 3, Бельцы",
     products: [
       {
         productName: "Удон с курицей",
-        image: "/src/Img/udon_chicken.jpg",
+        image: "/placeholder.svg",
         priceRegular: 130,
         priceDiscount: 110
       },
       {
         productName: "Лапша Рамен",
-        image: "/src/Img/ramen.jpg",
+        image: "/placeholder.svg",
         priceRegular: 140,
         priceDiscount: 120
       }
@@ -129,13 +128,13 @@ export const producersData = [
     products: [
       {
         productName: "Чизкейк Нью-Йорк",
-        image: "/src/Img/cheesecake.jpg",
+        image: "/placeholder.svg",
         priceRegular: 80,
         priceDiscount: 70
       },
       {
         productName: "Макарон",
-        image: "/src/Img/macaron.jpg",
+        image: "/placeholder.svg",
         priceRegular: 45,
         priceDiscount: 40
       }
@@ -149,13 +148,13 @@ export const producersData = [
     products: [
       {
         productName: "Круассан",
-        image: "/src/Img/croissant.jpg",
+        image: "/placeholder.svg",
         priceRegular: 40,
         priceDiscount: 25
       },
       {
         productName: "Капучино",
-        image: "/src/Img/cappuccino.jpg",
+        image: "/placeholder.svg",
         priceRegular: 45,
         priceDiscount: 20
       }
@@ -163,19 +162,19 @@ export const producersData = [
   },
   {
     categoryName: "Напитки",
-    categoryImage: "/src/Img/drinks.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "Fresh Drinks",
     address: "ул. Александри 21, Кагул",
     products: [
       {
         productName: "Фреш апельсиновый",
-        image: "/src/Img/orange_juice.jpg",
+        image: "/placeholder.svg",
         priceRegular: 35,
         priceDiscount: 30
       },
       {
         productName: "Кофе Латте",
-        image: "/src/Img/latte.jpg",
+        image: "/placeholder.svg",
         priceRegular: 50,
         priceDiscount: 45
       }
@@ -183,23 +182,22 @@ export const producersData = [
   },
   {
     categoryName: "Напитки",
-    categoryImage: "/src/Img/drinks.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "Wine Café",
     address: "ул. Киевская 16, Кишинёв",
     products: [
       {
         productName: "Совиньон Блан (Новая Зеландия)",
-        image: "/src/Img/sauvignon_blanc.jpg",
+        image: "/placeholder.svg",
         priceRegular: 120,
         priceDiscount: 110
       },
       {
         productName: "Арманьяк (Франция)",
-        image: "/src/Img/armagnac.jpg",
+        image: "/placeholder.svg",
         priceRegular: 250,
         priceDiscount: 230
       }
     ]
   }
 ];
-

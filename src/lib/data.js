@@ -1,11 +1,13 @@
-
-
 export const producersData = [
   {
     categoryName: "Молдавская",
-    categoryImage: "public/lovable-uploads/7c3e90f4-67d1-486c-9127-d445b9d67277.png",
+    categoryImage: "/lovable-uploads/7c3e90f4-67d1-486c-9127-d445b9d67277.png",
     producerName: "Bucătăria Moldovenească",
     address: "ул. Штефан чел Маре 45, Кишинёв",
+    producerImage: {
+      exterior: "/lovable-uploads/299fa24e-7a4a-4d37-b2da-545e7d217f25.png",
+      interior: "/lovable-uploads/802c1aa1-033f-49b5-ad18-7ba95b4725f0.png"
+    },
     products: [
       {
         productName: "Плацинда с брынзой",
@@ -23,9 +25,13 @@ export const producersData = [
   },
   {
     categoryName: "Молдавская",
-    categoryImage: "public/lovable-uploads/7c3e90f4-67d1-486c-9127-d445b9d67277.png",
+    categoryImage: "/lovable-uploads/7c3e90f4-67d1-486c-9127-d445b9d67277.png",
     producerName: "Casa Mare",
     address: "ул. Пушкина 12, Бельцы",
+    producerImage: {
+      exterior: "/lovable-uploads/b23af8db-2f25-48b3-8388-d1d30c0b3476.png",
+      interior: "/lovable-uploads/9781be38-3dd8-49ee-86e3-267d7f2c48ec.png"
+    },
     products: [
       {
         productName: "Сарма",
@@ -46,6 +52,10 @@ export const producersData = [
     categoryImage: "/src/Img/european.jpg",
     producerName: "La Cucina Italiana",
     address: "ул. Роз 23, Кишинёв",
+    producerImage: {
+      exterior: "/src/Img/default.jpg",
+      interior: "/src/Img/default.jpg"
+    },
     products: [
       {
         productName: "Пицца Маргарита",
@@ -62,30 +72,14 @@ export const producersData = [
     ]
   },
   {
-    categoryName: "Европейская",
-    categoryImage: "/src/Img/european.jpg",
-    producerName: "Bistro Français",
-    address: "ул. Эминеску 9, Кагул",
-    products: [
-      {
-        productName: "Киш Лорен",
-        image: "/src/Img/quiche_lorraine.jpg",
-        priceRegular: 95,
-        priceDiscount: 85
-      },
-      {
-        productName: "Круассан",
-        image: "/src/Img/croissant.jpg",
-        priceRegular: 40,
-        priceDiscount: 35
-      }
-    ]
-  },
-  {
     categoryName: "Паназиатская",
     categoryImage: "/src/Img/panasian.jpg",
     producerName: "Sushi Time",
     address: "ул. Вероники 17, Кишинёв",
+    producerImage: {
+      exterior: "/src/Img/default.jpg",
+      interior: "/src/Img/default.jpg"
+    },
     products: [
       {
         productName: "Филадельфия ролл",
@@ -102,30 +96,14 @@ export const producersData = [
     ]
   },
   {
-    categoryName: "Паназиатская",
-    categoryImage: "/src/Img/panasian.jpg",
-    producerName: "Wok House",
-    address: "ул. Каля Басарабяска 3, Бельцы",
-    products: [
-      {
-        productName: "Удон с курицей",
-        image: "/src/Img/udon_chicken.jpg",
-        priceRegular: 130,
-        priceDiscount: 110
-      },
-      {
-        productName: "Лапша Рамен",
-        image: "/src/Img/ramen.jpg",
-        priceRegular: 140,
-        priceDiscount: 120
-      }
-    ]
-  },
-  {
     categoryName: "Десерты",
-    categoryImage: "public/lovable-uploads/a4606b35-dfd5-4c80-97a2-a09aeb73ba21.png",
+    categoryImage: "/lovable-uploads/a4606b35-dfd5-4c80-97a2-a09aeb73ba21.png",
     producerName: "Sweet Corner",
     address: "ул. Дачия 50, Кишинёв",
+    producerImage: {
+      exterior: "/src/Img/default.jpg",
+      interior: "/src/Img/default.jpg"
+    },
     products: [
       {
         productName: "Чизкейк Нью-Йорк",
@@ -142,50 +120,14 @@ export const producersData = [
     ]
   },
   {
-    categoryName: "Десерты",
-    categoryImage: "public/lovable-uploads/a4606b35-dfd5-4c80-97a2-a09aeb73ba21.png",
-    producerName: "Coffee Point",
-    address: "ул. Когэлничану 32, Кишинёв",
-    products: [
-      {
-        productName: "Круассан",
-        image: "/src/Img/croissant.jpg",
-        priceRegular: 40,
-        priceDiscount: 25
-      },
-      {
-        productName: "Капучино",
-        image: "/src/Img/cappuccino.jpg",
-        priceRegular: 45,
-        priceDiscount: 20
-      }
-    ]
-  },
-  {
-    categoryName: "Напитки",
-    categoryImage: "/src/Img/drinks.jpg",
-    producerName: "Fresh Drinks",
-    address: "ул. Александри 21, Кагул",
-    products: [
-      {
-        productName: "Фреш апельсиновый",
-        image: "/src/Img/orange_juice.jpg",
-        priceRegular: 35,
-        priceDiscount: 30
-      },
-      {
-        productName: "Кофе Латте",
-        image: "/src/Img/latte.jpg",
-        priceRegular: 50,
-        priceDiscount: 45
-      }
-    ]
-  },
-  {
     categoryName: "Напитки",
     categoryImage: "/src/Img/drinks.jpg",
     producerName: "Wine Café",
     address: "ул. Киевская 16, Кишинёв",
+    producerImage: {
+      exterior: "/src/Img/default.jpg",
+      interior: "/src/Img/default.jpg"
+    },
     products: [
       {
         productName: "Совиньон Блан (Новая Зеландия)",
@@ -202,4 +144,3 @@ export const producersData = [
     ]
   }
 ];
-

@@ -1,3 +1,4 @@
+
 export const producersData = [
   {
     categoryName: "Молдавская",
@@ -11,13 +12,13 @@ export const producersData = [
     products: [
       {
         productName: "Плацинда с брынзой",
-        image: "/src/Img/placinta_brynza.jpg",
+        image: "/placeholder.svg",
         priceRegular: 50,
         priceDiscount: 40
       },
       {
         productName: "Мамалыга с брынзой",
-        image: "/src/Img/mamaliga.jpg",
+        image: "/placeholder.svg",
         priceRegular: 60,
         priceDiscount: 55
       }
@@ -35,13 +36,13 @@ export const producersData = [
     products: [
       {
         productName: "Сарма",
-        image: "/src/Img/sarma.jpg",
+        image: "/placeholder.svg",
         priceRegular: 70,
         priceDiscount: 65
       },
       {
         productName: "Зама",
-        image: "/src/Img/zama.jpg",
+        image: "/placeholder.svg",
         priceRegular: 55,
         priceDiscount: 50
       }
@@ -49,23 +50,23 @@ export const producersData = [
   },
   {
     categoryName: "Европейская",
-    categoryImage: "/src/Img/european.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "La Cucina Italiana",
     address: "ул. Роз 23, Кишинёв",
     producerImage: {
-      exterior: "/src/Img/default.jpg",
-      interior: "/src/Img/default.jpg"
+      exterior: "/placeholder.svg",
+      interior: "/placeholder.svg"
     },
     products: [
       {
         productName: "Пицца Маргарита",
-        image: "/src/Img/pizza_margherita.jpg",
+        image: "/placeholder.svg",
         priceRegular: 120,
         priceDiscount: 100
       },
       {
         productName: "Паста Карбонара",
-        image: "/src/Img/carbonara.jpg",
+        image: "/placeholder.svg",
         priceRegular: 110,
         priceDiscount: 90
       }
@@ -73,23 +74,23 @@ export const producersData = [
   },
   {
     categoryName: "Паназиатская",
-    categoryImage: "/src/Img/panasian.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "Sushi Time",
     address: "ул. Вероники 17, Кишинёв",
     producerImage: {
-      exterior: "/src/Img/default.jpg",
-      interior: "/src/Img/default.jpg"
+      exterior: "/placeholder.svg",
+      interior: "/placeholder.svg"
     },
     products: [
       {
         productName: "Филадельфия ролл",
-        image: "/src/Img/philadelphia_roll.jpg",
+        image: "/placeholder.svg",
         priceRegular: 150,
         priceDiscount: 130
       },
       {
         productName: "Сяке маки",
-        image: "/src/Img/sake_maki.jpg",
+        image: "/placeholder.svg",
         priceRegular: 90,
         priceDiscount: 75
       }
@@ -101,19 +102,19 @@ export const producersData = [
     producerName: "Sweet Corner",
     address: "ул. Дачия 50, Кишинёв",
     producerImage: {
-      exterior: "/src/Img/default.jpg",
-      interior: "/src/Img/default.jpg"
+      exterior: "/placeholder.svg",
+      interior: "/placeholder.svg"
     },
     products: [
       {
         productName: "Чизкейк Нью-Йорк",
-        image: "/src/Img/cheesecake.jpg",
+        image: "/placeholder.svg",
         priceRegular: 80,
         priceDiscount: 70
       },
       {
         productName: "Макарон",
-        image: "/src/Img/macaron.jpg",
+        image: "/placeholder.svg",
         priceRegular: 45,
         priceDiscount: 40
       }
@@ -121,23 +122,23 @@ export const producersData = [
   },
   {
     categoryName: "Напитки",
-    categoryImage: "/src/Img/drinks.jpg",
+    categoryImage: "/placeholder.svg",
     producerName: "Wine Café",
     address: "ул. Киевская 16, Кишинёв",
     producerImage: {
-      exterior: "/src/Img/default.jpg",
-      interior: "/src/Img/default.jpg"
+      exterior: "/placeholder.svg",
+      interior: "/placeholder.svg"
     },
     products: [
       {
         productName: "Совиньон Блан (Новая Зеландия)",
-        image: "/src/Img/sauvignon_blanc.jpg",
+        image: "/placeholder.svg",
         priceRegular: 120,
         priceDiscount: 110
       },
       {
         productName: "Арманьяк (Франция)",
-        image: "/src/Img/armagnac.jpg",
+        image: "/placeholder.svg",
         priceRegular: 250,
         priceDiscount: 230
       }
